@@ -7,7 +7,7 @@ html{
   box-sizing:inherit;
   margin: 0;
 }
-body{
+body{position: relative;
   font-family: 'Poppins', sans-serif;
   background-color: #080710;
   display: flex;
@@ -98,10 +98,10 @@ input , button{
   font-weight: bold;
 }
 
-body {
+body { 
     background-color: #102336;
   }
-  .bg {
+  .bg {z-index: -2;
     position: absolute;
     top: 0;
     left: 10px;
@@ -112,13 +112,13 @@ body {
     50% { opacity: 0.6; }
     100% { opacity: 0; }
   }
-  .stars-bg__star {
+  .stars-bg__star {z-index: -2;
     opacity: 0;
     animation: blink 3s infinite;
   }
-  .stars-bg__blink-2 {
+  .stars-bg__blink-2 {z-index: -2;
     animation-delay: 1s;
   }
-  .stars-bg__blink-3 {
+  .stars-bg__blink-3 {z-index: -2;
     animation-delay: 2s;
   }
